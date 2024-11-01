@@ -117,7 +117,7 @@ function Layout() {
             }`}
           >
             <a
-              href="https://www.linkedin.com/in/dev-irfan/"
+              href="https://www.linkedin.com/in/irfanappdev/"
               className=" text-white py-2 px-4 rounded transition-all"
               target="_blank"
             >
