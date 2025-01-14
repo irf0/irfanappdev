@@ -92,7 +92,7 @@ function Layout() {
               isMobile ? "w-[70%] h-[55%] mx-11" : "w-[80%] h-[56.8%] mx-9"
             }  `}
           >
-            <img src="/irfanpic.jpg" alt="Irfan" />
+            <img src="/Irfanpic.jpg" alt="Irfan" />
           </div>
 
           <div>
