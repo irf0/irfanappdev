@@ -89,15 +89,15 @@ function Layout() {
         >
           <div
             className={`bg-orange-600 rounded-2xl ${
-              isMobile ? "w-[70%] h-[55%] mx-11" : "w-[80%] h-[56.8%] mx-9"
+              isMobile ? "w-[70%] h-[55%] mx-11" : "w-[80%] h-[67%] mx-9"
             }  `}
           >
-            <img src="/Irfanpic.jpg" alt="Irfan" />
+            <img src="/Irfanpic.jpg" alt="Irfan" className=" rounded-xl" />
           </div>
 
           <div>
             <h1
-              className={`font-extrabold text-gray-600 pt-2 ${
+              className={`font-extrabold text-gray-600 pt-2 mt-1 ${
                 isMobile ? "text-2xl" : "text-4xl"
               }`}
             >
