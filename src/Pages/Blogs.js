@@ -27,22 +27,21 @@ const Blogs = () => {
     const tempDiv = document.createElement("div");
     tempDiv.innerHTML = description;
     const text = tempDiv.innerText;
-    return text.length > 150 ? text.substring(0, 250) + "..." : text; // Limit to 150 characters
+    return text.length > 150 ? text.substring(0, 250) + "..." : text;
   };
 
   // Function to format the date
   const formatDate = (dateString) => {
-    const options = { year: "numeric", month: "short", day: "numeric" }; // Format options
-    return new Date(dateString).toLocaleDateString("en-US", options); // Convert date to desired format
+    const options = { year: "numeric", month: "short", day: "numeric" };
+    return new Date(dateString).toLocaleDateString("en-US", options);
   };
 
   return (
     <div className="text-white relative">
       <div>
         <h1
-          className={`${
-            isMobile ? "text-4xl" : "text-8xl"
-          } text-left font-bold`}
+          className={`${isMobile ? "text-4xl" : "text-8xl"
+            } text-left font-bold`}
         >
           THOUGHTS & <br />{" "}
           <span className="text-left text-secondaryHeadingText">INSIGHTS</span>
@@ -62,17 +61,15 @@ const Blogs = () => {
             >
               <div className={`${isMobile ? "w-80" : "w-full"}`}>
                 <h1
-                  className={`text-left ${
-                    isMobile ? "text-lg font-bold" : "text-3xl font-bold"
-                  }`}
+                  className={`text-left ${isMobile ? "text-lg font-bold" : "text-3xl font-bold"
+                    }`}
                 >
                   {post?.title}
                 </h1>
               </div>
               <p
-                className={`text-secondaryText  ${
-                  isMobile ? "w-80 mt-2" : "w-10/12 mt-6"
-                }`}
+                className={`text-secondaryText  ${isMobile ? "w-80 mt-2" : "w-10/12 mt-6"
+                  }`}
               >
                 {createPreview(post?.description)}
               </p>
