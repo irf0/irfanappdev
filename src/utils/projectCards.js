@@ -112,7 +112,8 @@ export const projectCards = [
     overview:
       "Falaah is a unified Islamic app integrating Quran reading, prayer timings, duas, Qibla direction, and a spiritual community with real-time chat. Built with scalability and a clear business roadmap including ethical monetization.",
 
-    playStoreLink: null, // Update when live
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=com.falaah.app2&pcampaignid=web_share",
 
     screenshots: [
       "/Screenshots/fa1.jpg",
