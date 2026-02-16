@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaInstagram, FaLinkedin, FaRegEnvelope } from "react-icons/fa";
 import { HiOutlineHome } from "react-icons/hi";
 import { PiFolderBold, PiGearBold } from "react-icons/pi";
@@ -21,18 +21,24 @@ function Layout() {
     }
   };
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      scrollToSection("projects");
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div
-      className={`w-screen h-98 overflow-x-hidden ${
-        !isMobile && "overflow-y-auto"
-      }`}
+      className={`w-screen h-98 overflow-x-hidden ${!isMobile && "overflow-y-auto"
+        }`}
     >
       {/* Navigation Bar */}
       <div className={`text-white justify-center flex`}>
         <nav
-          className={`rounded-xl bg-navbarBg shadow-lg ${
-            isMobile ? "w-80" : "w-1/5"
-          } flex justify-evenly mt-5 ${isMobile && "p-2"}`}
+          className={`rounded-xl bg-navbarBg shadow-lg ${isMobile ? "w-80" : "w-1/5"
+            } flex justify-evenly mt-5 ${isMobile && "p-2"}`}
         >
           <ul className="flex gap-10 p-3 items-center">
             {/* Add onClick handlers to scroll to specific sections */}
@@ -83,23 +89,20 @@ function Layout() {
       <div className={`${isMobile ? "flex-col" : "flex mx-40 "} `}>
         {/* Fixed Picture Box on the Left */}
         <div
-          className={`bg-white rounded-xl px-2 py-8 mt-5 ${
-            isMobile ? "w-80 mx-10 h-28" : "fixed h-80 w-1/4"
-          }`}
+          className={`bg-white rounded-xl px-2 py-8 mt-5 ${isMobile ? "w-80 mx-10 h-28" : "fixed h-80 w-1/4"
+            }`}
         >
           <div
-            className={`bg-orange-600 rounded-2xl ${
-              isMobile ? "w-[70%] h-[55%] mx-11" : "w-[80%] h-[67%] mx-9"
-            }  `}
+            className={`bg-orange-600 rounded-2xl ${isMobile ? "w-[70%] h-[55%] mx-11" : "w-[80%] h-[67%] mx-9"
+              }  `}
           >
             <img src="/Irfanpic.jpg" alt="Irfan" className=" rounded-xl" />
           </div>
 
           <div>
             <h1
-              className={`font-extrabold text-gray-600 pt-2 mt-1 ${
-                isMobile ? "text-2xl" : "text-4xl"
-              }`}
+              className={`font-extrabold text-gray-600 pt-2 mt-1 ${isMobile ? "text-2xl" : "text-4xl"
+                }`}
             >
               M IRFAN
             </h1>
@@ -112,9 +115,8 @@ function Layout() {
           </div>
 
           <div
-            className={`flex justify-center gap-6 cursor-pointer ${
-              isMobile ? "mt-1" : "mt-3"
-            }`}
+            className={`flex justify-center gap-6 cursor-pointer ${isMobile ? "mt-1" : "mt-3"
+              }`}
           >
             <a
               href="https://www.linkedin.com/in/irfanappdev/"
