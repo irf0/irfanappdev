@@ -122,6 +122,7 @@ function Layout() {
               href="https://www.linkedin.com/in/irfanappdev/"
               className=" text-white py-2 px-4 rounded transition-all"
               target="_blank"
+              rel="noreferrer"
             >
               <FaLinkedin size={22} className="text-orange-600" />
             </a>
@@ -130,6 +131,7 @@ function Layout() {
               href="https://www.instagram.com/mr_irffan/"
               className=" text-white py-2 px-4 rounded transition-all"
               target="_blank"
+              rel="noreferrer"
             >
               <FaInstagram size={22} className="text-orange-600" />
             </a>
@@ -138,11 +140,12 @@ function Layout() {
               href="https://x.com/irfancodes1"
               className=" text-white py-2 px-4 rounded transition-all"
               target="_blank"
+              rel="noreferrer"
             >
               <FaXTwitter size={22} className="text-orange-600" />
             </a>
 
-            <a href="mailto:mirfan3054@gmail.com">
+            <a href="mailto:mirfan3054@gmail.com" rel="noreferrer">
               <MdOutlineMailOutline
                 size={24}
                 className="text-orange-600 mt-1.5"
