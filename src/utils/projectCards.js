@@ -6,7 +6,7 @@ export const projectCards = [
     shortDesc: "Custom Food delivery app for a restaurant.",
     imageURL: "/Logos/akbarsdarbarlogo.png",
     overview:
-      "Akbar's Darbar is a mobile app developed for a popular restaurant to streamline their online ordering process. The app allows users to browse the menu, place orders, and receive real-time updates on their orders.",
+      "Akbar's Darbar — Food delivery app. 500+ downloads, ₹1L revenue in 2 months. Built solo with React Native + Firebase + Razorpay.",
 
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.irfandarbar24.Darbar&hl=en",

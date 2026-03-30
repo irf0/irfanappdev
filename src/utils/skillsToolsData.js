@@ -17,12 +17,12 @@ export const skillsToolsData = [
     description: "Core scripting language.",
     imageURL: "/Logos/js logo.png",
   },
-  {
-    id: 4,
-    title: "NodeJS",
-    description: "Backend API development.",
-    imageURL: "/Logos/nodejslogo.png",
-  },
+  // {
+  //   id: 4,
+  //   title: "NodeJS",
+  //   description: "Backend API development.",
+  //   imageURL: "/Logos/nodejslogo.png",
+  // },
   {
     id: 5,
     title: "Firebase",
@@ -41,22 +41,17 @@ export const skillsToolsData = [
     description: "Android app deployment.",
     imageURL: "/Logos/playstorelogo.png",
   },
-  {
-    id: 8,
-    title: "App Store",
-    description: "iOS app deployment.",
-    imageURL: "/Logos/appstorelogo.png",
-  },
+  // {
+  //   id: 8,
+  //   title: "App Store",
+  //   description: "iOS app deployment.",
+  //   imageURL: "/Logos/appstorelogo.png",
+  // },
   {
     id: 9,
     title: "Expo",
     description: "React Native toolkit.",
     imageURL: "/Logos/expo logo.png",
   },
-  {
-    id: 10,
-    title: "Chat GPT",
-    description: "AI assistant.",
-    imageURL: "/Logos/chat gpt logo.png",
-  },
+
 ];
