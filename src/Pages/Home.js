@@ -1,7 +1,9 @@
 import React from "react";
-import { isMobile } from "react-device-detect";
+import { useIsMobile } from "../hooks/useIsMobile";
 
 function Home() {
+  const isMobile = useIsMobile();
+
   return (
     <div className={`text-white relative`}>
       {" "}

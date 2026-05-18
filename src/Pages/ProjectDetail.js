@@ -1,8 +1,10 @@
 import React from "react";
-import { isMobile } from "react-device-detect";
+import { useIsMobile } from "../hooks/useIsMobile";
 import { useParams } from "react-router-dom";
+import { projectCards } from "../utils/projectCards";
 
-function ProjectDetail({ projectCards }) {
+function ProjectDetail() {
+  const isMobile = useIsMobile();
   const { projectId } = useParams();
   const project = projectCards.find((p) => p?.id === Number(projectId));
 
@@ -60,6 +62,8 @@ function ProjectDetail({ projectCards }) {
                     key={i}
                     src={s}
                     alt={`Screenshot ${i + 1}`}
+                    loading="lazy"
+                    decoding="async"
                     className="rounded-lg shadow-md object-cover"
                   />
                 ))}

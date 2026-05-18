@@ -1,10 +1,12 @@
 import React from "react";
-import { isMobile } from "react-device-detect";
+import { useIsMobile } from "../hooks/useIsMobile";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { projectCards } from "../utils/projectCards";
 import { Link } from "react-router-dom";
 
 function Projects() {
+  const isMobile = useIsMobile();
+
   return (
     <div className="text-white relative">
       <div>
@@ -19,7 +21,7 @@ function Projects() {
       </div>
 
       {projectCards?.map((project) => (
-        <Link to={`/projectdetail/${project?.id}`}>
+        <Link key={project?.id} to={`/projectdetail/${project?.id}`}>
           <div
             key={project?.id}
             className="relative flex gap-5 shadow-lg bg-secondaryHeadingText cursor-pointer p-7 rounded-xl mt-5 transition-transform duration-300 transform hover:scale-105 hover:animate-blink-border"
@@ -29,6 +31,10 @@ function Projects() {
               <img
                 src={project?.imageURL}
                 alt={project?.title}
+                loading="lazy"
+                decoding="async"
+                width={isMobile ? 160 : 96}
+                height={isMobile ? 96 : 96}
                 className={`${isMobile ? "w-40 h-24" : "w-24 h-24"} rounded-lg`}
               />
             </div>

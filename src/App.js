@@ -1,28 +1,32 @@
-import "./App.css";
+import { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./Pages/Home";
-import Projects from "./Pages/Projects";
-import Skills from "./Pages/Skills";
-import Contact from "./Pages/Contact";
 import Layout from "./Pages/Layout";
-import ProjectDetail from "./Pages/ProjectDetail";
-import { projectCards } from "./utils/projectCards";
-import Blogs from "./Pages/Blogs";
+
+const ProjectDetail = lazy(() => import("./Pages/ProjectDetail"));
+
+function PageLoader() {
+  return (
+    <div
+      className="min-h-screen bg-[#151312]"
+      aria-busy="true"
+      aria-label="Loading"
+    />
+  );
+}
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <Routes>
-          <Route index element={<Layout />}></Route>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<Layout />} />
           <Route
             path="/projectdetail/:projectId"
-            element={<ProjectDetail projectCards={projectCards} />}
+            element={
+              <Suspense fallback={<PageLoader />}>
+                <ProjectDetail />
+              </Suspense>
+            }
           />
         </Routes>
       </div>

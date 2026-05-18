@@ -1,8 +1,10 @@
 import React from "react";
-import { isMobile } from "react-device-detect";
+import { useIsMobile } from "../hooks/useIsMobile";
 import { skillsToolsData } from "../utils/skillsToolsData";
 
 function Skills() {
+  const isMobile = useIsMobile();
+
   return (
     <div className="text-white">
       <h1
@@ -26,6 +28,10 @@ function Skills() {
               <img
                 src={skill?.imageURL}
                 alt={skill?.title}
+                loading="lazy"
+                decoding="async"
+                width={48}
+                height={48}
                 className={`w-12 h-12 rounded-lg ${isMobile && "mx-10 mb-2"}`}
               />
               <div>
@@ -60,6 +66,10 @@ function Skills() {
               <img
                 src={skill?.imageURL}
                 alt={skill?.title}
+                loading="lazy"
+                decoding="async"
+                width={48}
+                height={48}
                 className={`w-12 h-12 rounded-lg ${isMobile && "mx-10 mb-2"}`}
               />
 

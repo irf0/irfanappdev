@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { isMobile } from "react-device-detect";
+import { useIsMobile } from "../hooks/useIsMobile";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 const Blogs = () => {
+  const isMobile = useIsMobile();
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {

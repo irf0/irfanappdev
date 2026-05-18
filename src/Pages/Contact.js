@@ -1,8 +1,9 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import { isMobile } from "react-device-detect";
+import { useIsMobile } from "../hooks/useIsMobile";
 
 function Contact() {
+  const isMobile = useIsMobile();
   const [state, handleSubmit] = useForm("mzzbpnzd");
   if (state.succeeded) {
     return <p className="text-white">Thanks for joining!</p>;
