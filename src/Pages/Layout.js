@@ -119,7 +119,7 @@ function Layout() {
               }`}
           >
             <a
-              href="https://www.linkedin.com/in/irfanappdev/"
+              href="https://www.linkedin.com/in/irfan3054/"
               className=" text-white py-2 px-4 rounded transition-all"
               target="_blank"
               rel="noreferrer"
@@ -127,17 +127,9 @@ function Layout() {
               <FaLinkedin size={22} className="text-orange-600" />
             </a>
 
-            <a
-              href="https://www.instagram.com/mr_irffan/"
-              className=" text-white py-2 px-4 rounded transition-all"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaInstagram size={22} className="text-orange-600" />
-            </a>
 
             <a
-              href="https://x.com/irfancodes1"
+              href="https://x.com/mirfandev5"
               className=" text-white py-2 px-4 rounded transition-all"
               target="_blank"
               rel="noreferrer"
