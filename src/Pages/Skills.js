@@ -18,7 +18,9 @@ function Skills() {
       <div className="grid grid-cols-2 gap-10 mt-10">
         {/* Left Column */}
         <div>
-          {skillsToolsData?.slice(0, 5).map((skill, index) => (
+          {skillsToolsData
+            ?.slice(0, Math.ceil(skillsToolsData.length / 2))
+            .map((skill, index) => (
             <div
               key={index}
               className={`${
@@ -56,7 +58,9 @@ function Skills() {
 
         {/* Right Column */}
         <div>
-          {skillsToolsData?.slice(5).map((skill, index) => (
+          {skillsToolsData
+            ?.slice(Math.ceil(skillsToolsData.length / 2))
+            .map((skill, index) => (
             <div
               key={index}
               className={`${

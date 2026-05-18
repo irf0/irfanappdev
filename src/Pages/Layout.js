@@ -111,7 +111,7 @@ function Layout() {
 
           <div>
             <h1
-              className={`font-extrabold text-gray-600 pt-2 mt-1 ${
+              className={`font-extrabold text-gray-600 pt-2 mt-1 text-center ${
                 isMobile ? "text-2xl" : "text-4xl"
               }`}
             >
@@ -126,30 +126,37 @@ function Layout() {
           </div>
 
           <div
-            className={`flex justify-center gap-6 cursor-pointer ${
+            className={`flex justify-center items-center gap-5 cursor-pointer ${
               isMobile ? "mt-1" : "mt-3"
             }`}
           >
             <a
               href="https://www.linkedin.com/in/irfan3054/"
-              className="text-white py-2 px-4 rounded transition-all"
+              className="flex h-8 w-8 items-center justify-center rounded transition-all"
               target="_blank"
               rel="noreferrer"
+              aria-label="LinkedIn"
             >
-              <IconLinkedIn size={22} className="text-orange-600" />
+              <IconLinkedIn size={28} className="h-7 w-7 text-[#0A66C2]" />
             </a>
 
             <a
               href="https://x.com/mirfandev5"
-              className="text-white py-2 px-4 rounded transition-all"
+              className="flex h-8 w-8 items-center justify-center rounded transition-all"
               target="_blank"
               rel="noreferrer"
+              aria-label="X"
             >
-              <IconX size={22} className="text-orange-600" />
+              <IconX size={28} className="h-7 w-7 text-black" />
             </a>
 
-            <a href="mailto:mirfan3054@gmail.com" rel="noreferrer">
-              <IconEnvelope size={24} className="text-orange-600 mt-1.5" />
+            <a
+              href="mailto:mirfan3054@gmail.com"
+              rel="noreferrer"
+              className="flex h-8 w-8 items-center justify-center"
+              aria-label="Email"
+            >
+              <IconEnvelope size={28} className="h-7 w-7 text-[#EA4335]" />
             </a>
           </div>
         </div>

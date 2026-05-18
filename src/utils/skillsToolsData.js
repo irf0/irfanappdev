@@ -17,12 +17,12 @@ export const skillsToolsData = [
     description: "Core scripting language.",
     imageURL: "/Logos/js logo.png",
   },
-  // {
-  //   id: 4,
-  //   title: "NodeJS",
-  //   description: "Backend API development.",
-  //   imageURL: "/Logos/nodejslogo.png",
-  // },
+  {
+    id: 4,
+    title: "TypeScript",
+    description: "Typed Javascript",
+    imageURL: "/Logos/typescriptlogo.png",
+  },
   {
     id: 5,
     title: "Firebase",

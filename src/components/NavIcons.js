@@ -94,7 +94,7 @@ export function IconLinkedIn({ size = 22, className = "" }) {
       height={size}
       viewBox="0 0 24 24"
       fill="currentColor"
-      className={className}
+      className={`${iconClass} ${className}`}
       aria-hidden="true"
     >
       <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.02H3.56V9h3.56v11.45Z" />
@@ -109,7 +109,7 @@ export function IconX({ size = 22, className = "" }) {
       height={size}
       viewBox="0 0 24 24"
       fill="currentColor"
-      className={className}
+      className={`${iconClass} ${className}`}
       aria-hidden="true"
     >
       <path d="M18.9 2H22l-6.8 7.77L23.2 22h-6.7l-5.2-6.8L5.4 22H2.3l7.27-8.3L.8 2h6.9l4.7 6.2L18.9 2Zm-1.2 18h1.86L7.1 3.95H5.1L17.7 20Z" />
@@ -123,14 +123,11 @@ export function IconEnvelope({ size = 24, className = "" }) {
       width={size}
       height={size}
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      className={className}
+      fill="currentColor"
+      className={`${iconClass} ${className}`}
       aria-hidden="true"
     >
-      <rect x="3" y="5" width="18" height="14" rx="2" />
-      <path d="m3 7 9 6 9-6" />
+      <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z" />
     </svg>
   );
 }
